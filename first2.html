@@ -3,23 +3,50 @@
   <head>
     <title>my_first_web</title>
     <meta charset = "utf-8">
+
+    <script src = "object_of_first.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
   </head>
+
   <body>
-    <p><a
-        href="first.html">
-        <h3>WEB</h3></a></p>
-    <ol>
-      <p><a
-        href="first1.html">
-        <li>HTML</li></a></p>
-      <p><a
-        href = "first2.html">
-        <li>CSS</li></a></p>
-      <p><a
-        href = "first3.html">
-      <li>JavaScript</li></a></p>
-    </ol>
-    <p><h4>CSS</h4></p>
-    <p>cssssss</p>
+    <script>document.querySelector('body').style.backgroundColor = 'white';</script>
+
+    <h1><a href="index.html">WEB</a></h1>
+
+    <div class="buttons">
+      MODE :
+      <input type="button" value = "night" onclick="makeNight(this);">
+      <input type="button" value = "day" onclick="makeDay(this);">
+      <input type="button" value = "toggle" onclick="
+        if(document.querySelector('body').style.backgroundColor === 'white'){
+          makeNight(this);
+        } 
+        else{
+          makeDay(this);
+        }
+      ">
+    </div>
+    <span class = "main_body_frame">
+      <span class = "nevigation">
+        <ol>
+          <a href="first1.html"><li>HTML</li></a>
+          <a href = "first2.html"><li>CSS</li></a>
+          <a href = "first3.html"><li>JavaScript</li></a>
+        </ol>
+      </span>
+
+      <span class = "contents">
+        <h4>CSS</h4>
+        <p>About CSS Lorem, ipsum dolor sit amet consectetur 
+          adipisicing elit. Molestias, vel placeat. 
+          Aliquid itaque ea fuga sit doloremque eius architecto 
+          voluptatum expedita vero dolor nobis consectetur
+           reprehenderit perferendis, quis at doloribus.</p>
+      </span>
+    </span>
+
+    <p><input type="checkbox" name="new check" value="10">여기 있는 내용들을 전부 이해하였습니다</p>
+
   </body>
 </html>
